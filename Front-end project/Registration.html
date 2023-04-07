@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+  <style>
+    #main {
+      display: flex;
+
+    }
+
+    .form-group {
+      display: flex;
+      justify-content: center;
+      margin-top: 2%;
+    }
+
+    #button {
+      width: 30%;
+
+    }
+
+    body {
+      background: linear-gradient(90deg, #29f599, #009ffd);
+    }
+
+    #container {
+      box-shadow: 0px 0px 10px 8px black;
+    }
+  </style>
+
+</head>
+
+<body class="bg-danger">
+  <div class="container col-md-6 bg-info rounded" id="container" style=" margin-top: 100px;margin-bottom: 50px;">
+    <div class="container" id="main">
+      <form class="form-horizontal row" id="form" method="post">
+        <h2 class="text-center bg-dark text-light rounded-bottom">Registration</h2>
+        <div class="form-group">
+          <div class="col-sm-9">
+            <label class="col-sm-3 control-label">First Name</label>
+            <input type="text" class="form-control" placeholder="First name" id="first" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-9">
+            <label class="col-sm-3 control-label">Last Name</label>
+            <input type="text" class="form-control" placeholder="Last Name" id="last" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-9">
+            <label class="col-sm-3 control-label">E-mail</label>
+            <input type="text" class="form-control" placeholder="Email" id="mail" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-9">
+            <label class="col-sm-3 control-label">Mobile</label>
+            <input type="text" class="form-control" placeholder="Mobile" id="mobile" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-9">
+            <label class="col-sm-3 control-label">Date of Birth</label>
+            <input type="date" class="form-control" placeholder="Date of Birth" id="DOB" required>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <div class="col-sm-9">
+            <label class="col-sm-3 control-label">Create Password</label>
+            <input type="password" class="form-control" placeholder="Create Password" id="create" required>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <div class="col-sm-9">
+            <label class="col-sm-4 control-label">Confirm Password</label>
+            <input type="password" class="form-control" placeholder="Confirm Password" id="confirm" required>
+          </div>
+        </div>
+
+
+        <div class="form-group my-3">
+          <label class="control-label col-sm-3">Gender</label>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-4">
+                <label class="radio-inline">
+                  <input type="radio" id="fRadio" name="Gender" required>Female
+                </label>
+              </div>
+              <div class="col-sm-4">
+                <label class="radio-inline">
+                  <input type="radio" id="mRadio" name="Gender" required>Male
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group my-2">
+          <div class="col-sm-9 col-sm-offset-3">
+            <span class="help-block">*Required fields</span>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="form-group my-3">
+          <button type="submit" class="btn btn-primary btn-block form-control" id="button">Register
+        </div>
+
+        </button>
+      </form>
+    </div>
+  </div>
+  </form>
+  </div>
+  <script src="/Registration.js">
+
+  </script>
+
+</body>
+
+</html>
